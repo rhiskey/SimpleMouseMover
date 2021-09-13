@@ -3,10 +3,8 @@ import threading
 
 import pyautogui
 import sys
-import keyboard
 import time
 import tkinter as tk
-from tkinter import ttk
 import os
 from dotenv import load_dotenv
 
@@ -23,9 +21,6 @@ def run_move():
             return
 
         while is_running:
-            # x, y = pyautogui.position()
-            # position_str = 'X: ' + str(x).rjust(4) + ' Y: ' + str(y).rjust(4)
-
             rand_x = random.randint(0, width)
             rand_y = random.randint(0, height)
 
@@ -108,4 +103,3 @@ if __name__ == '__main__':
     root = tk.Tk()
     app = Application(master=root)
     app.mainloop()
-    # start()
