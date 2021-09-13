@@ -63,7 +63,7 @@ class Application(tk.Frame):
         self.create_widgets()
 
     def create_widgets(self):
-        self.start["text"] = "Start\n(Stop)"
+        self.start["text"] = "Start"
         self.start["command"] = self.start_move_mouse
         self.start.grid(row=0, column=0, sticky=tk.W, pady=4)
         self.stop.grid(row=0, column=1, sticky=tk.W, pady=4)
